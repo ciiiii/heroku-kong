@@ -10,15 +10,15 @@
     "management"
   ],
   "website": "https://getkong.org/",
-  "repository": "https://github.com/heroku/heroku-kong.git",
-  "success_url": "https://github.com/heroku/heroku-kong/blob/master/README.md#user-content-usage",
+  "repository": "https://github.com/ciiiii/heroku-kong.git",
+  "success_url": "https://github.com/ciiiii/heroku-kong/blob/master/README.md#user-content-usage",
   "stack": "heroku-18",
-  "buildpacks": [{
-    "url": "https://github.com/heroku/heroku-buildpack-kong.git"
-  }],
-  "addons": [
-    "heroku-postgresql"
+  "buildpacks": [
+    {
+      "url": "https://github.com/ciiiii/heroku-buildpack-kong.git"
+    }
   ],
+  "addons": ["heroku-postgresql"],
   "env": {
     "KONG_HEROKU_ADMIN_KEY": {
       "description": "A secret key for accessing Kong's Admin API via public proxy at /kong-admin",
